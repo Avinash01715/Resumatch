@@ -1,0 +1,23 @@
+[project]
+name = "resumatch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "avinash01715", email = "avinash01715@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "groq",
+    "pydantic",
+    "pypdf",
+    "python-docx",
+    "python-dotenv",
+]
+
+[project.scripts]
+resumatch = "resumatch:main"
+
+[build-system]
+requires = ["uv_build>=0.12.12,<0.13.0"]
+build-backend = "uv_build"
